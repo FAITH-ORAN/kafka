@@ -1,10 +1,10 @@
-package com.example.base_domain.dto;
+package com.example.account_service.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,6 +14,6 @@ public class Account {
     private String accountCustomerName;
     private String accountCustomerEmail;
     private String accountCustomerPhone;
-    private Date accountCreatedAt;
+    private LocalDateTime accountCreatedAt;
     private double accountBalance;
 }
